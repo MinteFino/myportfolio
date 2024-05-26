@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mintesinot Fino Portfolio Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+
+  <link rel="icon" href="minte.jpg" type="image/png">
+
+</head>
+
+<body onload="document.body.style.opacity='1'">
+  <div class="hero">
+    <div class="nav">
+      <div class="logo">Minte Fino</div>
+      <div class="links">
+        <nav class="navbar">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    
+    <section id="home" class="home">
+      <div class="main">
+        <img src="minte.jpg" alt="person">
+        <div class="main-dt">
+          <p>Hello I'm</p>
+          <h1>Mintesinot Fino</h1>
+          <h4><span id="jobTitle">Software Developer</span></h4>
+          <div class="social-icon">
+            <a href="https://www.linkedin.com/in/mintesinot-fino-762774264/" target="_blank">
+          <img src="linkedin.png"></a>
+          <a href="https://github.com/MinteFino" target="_blank">
+          <img src="github.png"></a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="about.png">
+            </div>
+          <div class="about-col-2">
+            <h2 class="title-1">About Me</h2>
+            <p>I am Mintesinot Fino, a passionate software developer with a strong interest in creating meaningful and engaging digital experiences. 
+              Originally from Ethiopia, I am currently pursuing my degree at Dakota State University, focusing on Computer Science and Software Development.
+              My journey in the world of technology started with a curiosity to understand how things work behind the scenes. Over the years, I have honed my skills in HTML, CSS, JavaScript, and various programming languages, allowing me to turn ideas into reality through code.
+              Outside of coding, I enjoy exploring new technologies, solving challenging problems, and collaborating with like-minded individuals to build innovative solutions.
+              </p>
+          </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      
+      <section id="education">
+        <div class="container">
+        <h1 class="title">Education</h1>
+        <div class="education-list">
+          <div>
+            <h3>Dakota State University</h3>
+            <p>Bachelors and Associate Degree</p><br>
+            <p><b>Major:</b> Computer Science and Software Development</p><br>
+            <p><b>Relevant Courses:</b> Data structure, Programming Languages, Database Management,
+              Web Development
+            </p>
+            <div class="learn">
+              <a href="https://dsu.edu/" target="_blank"><b>LEARN MORE--></b></a>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+
+      <section id="contact" class="contact">
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="https://formspree.io/f/mzbnwrbe" method="POST">
+          <div class="contact__input">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+          </div>
+          <div class="contact__input">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="contact__input">
+            <textarea id="message" name="message" placeholder="Message" required></textarea>
+          </div>
+          <div>
+            <button class="btn btn--outline--dark contact__button" type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+</body>
+</html>
+
+  
+    

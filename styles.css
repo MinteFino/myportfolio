@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  opacity: 0;
+  transition: opacity 3s;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero{
+  max-width: 100%;
+  height: 100vh;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo {
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.links ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.links ul a {
+  text-decoration: none;
+  color: #2a2a2a;
+  font-weight: 400;
+  transition: all 1000ms ease;
+}
+
+.links ul a:hover {
+  color: rgb(159, 45, 45);
+  text-decoration: underline;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  margin-top: 70px;
+}
+
+.main img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: all 2000ms ease;
+  cursor: pointer;
+}
+
+.main-dt img{
+  width: 50px;
+  height: 50px;
+}
+
+.main img:hover {
+  transform: scale(1.2);
+}
+
+.main .main-dt {
+  text-align: center;
+  color: #2a2a2a;
+}
+
+.main .main-dt p {
+  font-size: 30px;
+}
+
+.main .main-dt h1 {
+  font-size: 40px;
+}
+
+.main .main-dt h4 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+#jobTitle {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.15em solid black; 
+  white-space: nowrap;
+  animation: typing 2s steps(50, end) infinite alternate; 
+}
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#about{
+  padding: 80px 0;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1{
+  flex-basis: 35%;
+}
+
+.about-col-1 img{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about-col-2{
+  flex-basis: 60%;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-container {
+    flex-wrap: wrap;
+  }
+
+  .about-img {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .about-img img {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .about-page {
+    flex: 1 1 100%;
+  }
+}
+
+.link-arrow a{
+    color: blue;
+    text-transform: uppercase;
+    
+}
+
+/* Education Styles */
+
+/* Education Styles */
+
+#education {
+  padding: 80px 0;
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.education-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.education-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+}
+
+.education-item h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.education-item p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .education-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .education-item {
+    padding: 15px;
+  }
+}
+
+.learn a {
+  display: inline-block;
+  padding: 5px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.learn a:hover {
+  background-color: #0056b3;
+}
+
+.learn a:active {
+  background-color: #003366;
+}
+
+/* contact*/
+
+.contact-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact__input input,
+.contact__input textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact__button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact__button:hover {
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 10px;
+  }
+
+  .contact__input input,
+  .contact__input textarea {
+    width: calc(100% - 20px); 
+    margin-bottom: 15px;
+  }
+
+  .contact__button {
+    padding: 8px 16px;
+  }
+}
+
+
+/* adjust */
+
+
+/* arrow */
